@@ -1,10 +1,12 @@
 import pandas as pd
 import pickle
 import streamlit as st
+from pathlib import Path
+model_path = Path("artifacts/model.pkl")
 
 # Load the data and model
 df_1 = pd.read_csv("tel_churn.csv")
-model = pickle.load(open("/artifacts/model.pkl", "rb"))
+model = pickle.load(model_path.open("rb"))
 
 # Define input fields
 st.title("Customer Churn Prediction")
