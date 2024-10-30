@@ -1,0 +1,8 @@
+numpy
+pandas
+seaborn
+matplotlib
+pickle5  # Only if using pickle with specific compatibility needs; otherwise, omit this line
+streamlit
+scikit-learn
+imblearn  # For SMOTEENN from imbalanced-learn package
